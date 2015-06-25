@@ -21,8 +21,12 @@ Concept and Practice of Java Virtual Machine, Java Memory Model, Garbage Collect
 * [Learn JVM Implementation Step by Step by RednaxelaFx - Chinese](http://www.douban.com/doulist/2545443)
 * [Understanding the JVM - Advanced Features and Best Practices by ZhimingZhou - Chinese](http://book.douban.com/subject/6522893)
 * [Java Virtual Machine in Action - Chinese](http://book.douban.com/subject/26354292)
-* [Distribued Java Application](http://book.douban.com/subject/4848587)
+* [Distribued Java Application - Chinese](http://book.douban.com/subject/4848587)
 * [Hotspot in Action by TaoChen - Chinese](http://book.douban.com/subject/25847620)
-* [The Garbage Collection Handbook](http://gchandbook.org)
+* [Write a Tiny Virtual Machine - Chinese ](www.cnblog.com/john-d/archive/2009/12/05/1617710.html)
+* [A hobby JVM by ZhitongWang - Chinese](https://github.com/cloundsec/ajvm)
 * [The School of Niklaus Wirth](http://www.inf.ethz.ch/personal/wirth)
+* [Baby's First Garbage Collector](http://journal.stuffwithstuff.com/2013/12/08/babys-first-garbage-collector/)
+* [The Garbage Collection Handbook](http://gchandbook.org)
+
 
