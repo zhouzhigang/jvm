@@ -7,8 +7,8 @@ Reflection is commonly used by programms which require the ability to examine or
 ## [Classes](classes)
 
 * [Retrieving Class Objects](classes/RetrievingClass.java)
-* [Examining Class Modifiers and Types](class/ClassDeclarationSpy.java)
-* Discovering Class Members
+* [Examining Class Modifiers and Types](classes/ClassDeclarationSpy.java)
+* [Discovering Class Members](classes/ClassSpy.java)
 * Troubleshooting
 
 ## Members
