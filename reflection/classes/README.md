@@ -11,6 +11,8 @@
     - Class.getClasses()
     - class.getDeclaredClasses()
 
+e.g. [RetrievingClass.java](RetrievingClass.java)
+
 ## Examining Class modifiers and Types
 
 Class Modifiers:
@@ -27,6 +29,8 @@ Class Modifiers:
     Class<?> ancestor = c.getSuperclass();
     Type[] intfs = c.getGenericInterfaces();
     Annotation[] ann = c.getAnnotations();
+
+e.g. [ClassDeclarationSpy.java](ClassDeclarationSpy.java)
 
 ## Discovering Class Memebers
 
@@ -57,6 +61,12 @@ Class Methods for Locating __Constructors__
 |`getDeclaredConstructors()`|yes|N/A|yes|
 |`getConstructors()`|yes|N/A|no|
 
+e.g. [ClassSpy.java](ClassSpy.java)
+
 ## Troubleshooting
 
+* Compiler Warning: "Note:... uses unchecked or unsafe operations"
+* InstantiationException/IllegalAccessException when the Constructor is Not Accessible
+
+e.g [ClassWarning.java](ClassWarning.java) [ClassTrouble.java](ClassTrouble.java)
 
