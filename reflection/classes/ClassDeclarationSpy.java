@@ -12,16 +12,30 @@ import static java.lang.System.out;
  * Print out the Class, Modifiers, Type Parameters, Interfacess, Inheritance Path and Annotations in std out.
  *
  * Usages examples:
- *  java ClassDeclarationSpy java.util.concurrent.ConcurrentNavigableMaple
+ *  java ClassDeclarationSpy java.util.concurrent.ConcurrentNavigableMap
  *  java ClassDeclarationSpy "[Ljava.lang.String;"
  *  java ClassDeclarationSpy java.io.InterruptedIOException
  *  java ClassDeclarationSpy java.security.Identity
  */
 public class ClassDeclarationSpy {
 
-    public static void main(String[] args) {
+    public static void main(String args[]) {
+        if (args.length >= 1) {
+            ClassDeclarationSpy.getClassDeclaration(args[0]);
+        } else {
+            out.format("==== Usage: ====%n    java ClassDeclarationSpy 'classname'%n");
+            out.format("==== Example: ====%n    java ClassDeclarationSpy 'java.lang.String'%n");
+            out.format("==== Example Result: ====%n");
+            ClassDeclarationSpy.getClassDeclaration("java.lang.String");
+        }
+    }
+
+    /**
+     * Get class declaration by classNam(include package).
+     */
+    public static void getClassDeclaration(String className) {
         try {
-            Class<?> c = Class.forName(args[0]);
+            Class<?> c = Class.forName(className);
             // get classes
             out.format("Class: %n   %s%n%n", c.getCanonicalName());
             // get modifiers
@@ -82,6 +96,9 @@ public class ClassDeclarationSpy {
         }
     }
 
+    /**
+     * Get ancestor recursively.
+     */
     private static void printAncestor(Class<?> c, List<Class<?>> l) {
         Class<?> ancestor = c.getSuperclass();
         if (ancestor != null) {
