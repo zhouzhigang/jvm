@@ -11,9 +11,13 @@ Reflection is commonly used by programms which require the ability to examine or
 * [Discovering Class Members](classes/ClassSpy.java)
 * Troubleshooting
 
-## Members
+## [Members](members)
 
-* Fields
+### Fields
+
+* [Obtaining Field Types](members/FieldSpy.jva)
+* [Retrieving and Parsing Field Modifiers](members/FieldModifierSpy.java)
+
 * Methods
 * Constructors
 
