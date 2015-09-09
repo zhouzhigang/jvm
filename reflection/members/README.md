@@ -51,6 +51,10 @@ e.g [Book.java](Book.java)
 
 ### Troubleshooting
 
+* [IllegalArgumentException due to Inconvertible Types](FieldTrouble.java)
+* NoSuchFieldException for Non-Public Fields
+* [IllegalAccessException when Modifying Final Fields](FieldTroubleToo.java)
+
 ## Methods
 
 ## Constructors
