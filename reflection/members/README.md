@@ -57,6 +57,27 @@ e.g [Book.java](Book.java)
 
 ## Methods
 
+### Obtaining Mehod Type Infomation
+
+    Method[] methods = c.getDeclaredMethods();
+    for (Method m : methods) {
+        if (!m.getName().equals("className")) {
+            continue;
+        }
+        // get return type
+        Class<?> rType = m.getReturnType();
+        Type grType = m.getGenericReturnType();
+        // get parameter
+        Class<?>[] pType = m.getParameterTypes();
+        Type[] gpType = m.getGenericParameterTypes();
+        // getException
+        Class<?>[] xType = m.getExceptionTypes();
+        Type[] gxType = m.getGenericExceptionTypes();
+    }
+
+e.g. [MethodSpy.java](MethodSpy.java)
+
+
 ## Constructors
 
 
