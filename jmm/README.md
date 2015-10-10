@@ -104,6 +104,14 @@ OutOfMemory(Toatl memory of the Machine)
 + Direct Pointer(JVM use, fast)
     * there is a pointer to class(type) in the object
 
+## OutofMemory In Action
+
++ [Java Heap OOM](HeapOOM.java)
+    * dump to analysis
+        - Memory Leak(Check GC Roots Chain)
+        - Memory Overflow(Check JVM parameters, check lifetime in code)
+
+
 ## Reference
 
 * [JVM Specification - 2.5. Run-Time Data Areas](https://docs.oracle.com/javase/specs/jvms/se8/html/jvms-2.html#jvms-2.5)
