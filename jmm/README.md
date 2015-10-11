@@ -106,11 +106,12 @@ OutOfMemory(Toatl memory of the Machine)
 
 ## OutofMemory In Action
 
-+ [Java Heap OOM](HeapOOM.java)
++ [Java Heap OOM](HeapOOM.java) - create objects continuously
     * dump to analysis
         - Memory Leak(Check GC Roots Chain)
         - Memory Overflow(Check JVM parameters, check lifetime in code)
-
++ [StackOverflow on JVM Stack](JVMStackOOF.java) - no recursive eixt
++ [OutOfMemeory on JVM Stack](JVMStackOOM.java) - create threads continuously
 
 ## Reference
 
