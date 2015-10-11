@@ -28,7 +28,7 @@ public class JVMStackOOM {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         JVMStackOOM oom = new JVMStackOOM();
         oom.stackLeakByThread();
     }
